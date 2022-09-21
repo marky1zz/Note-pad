@@ -26,7 +26,6 @@ void MainWindow::on_actionNew_triggered()
     ui->textEdit->clear();
 }
 
-
 void MainWindow::on_actionOpen_triggered()
 {
     QString file_name = QFileDialog::getOpenFileName(this, "Opened file");
@@ -64,7 +63,6 @@ void MainWindow::on_actionSave_triggered()
     file.close();
 }
 
-
 void MainWindow::on_actionSave_As_triggered()
 {
     QString file_name = QFileDialog::getSaveFileName(this, "Save As");
@@ -83,13 +81,6 @@ void MainWindow::on_actionSave_As_triggered()
     file.flush();
     file.close();
 }
-
-/*
-void MainWindow::on_actionPrint_triggered()
-{
-
-}
-*/
 
 void MainWindow::on_actionExit_triggered()
 {
